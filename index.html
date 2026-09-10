@@ -3,39 +3,38 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Colorime3ka — podpora / support</title>
-<meta name="description" content="Colorime3ka — forenzné a dermatologické určovanie farieb. Podpora a kontakt. / Forensic and dermatological color assessment. Support and contact.">
+<title>Colorime3ka — podpora / support · forensika.eu</title>
+<meta name="description" content="Colorime3ka — meranie farby kožných nálezov pre súdnolekársku a dermatologickú dokumentáciu. Podpora a kontakt. / Colour measurement of skin findings for forensic and dermatological documentation.">
 <style>
   :root {
-    --navy: #21334c;
-    --sky-top: #b3c9ea;
-    --lavender: #c9c2e3;
-    --blue: #3b73f0;
-    --green: #5c9e70;
+    --navy: #21334c; --sky-top: #b3c9ea; --lavender: #c9c2e3;
+    --blue: #3b73f0; --mint: #6cbeb4; --ink: #3d4657; --muted: #8a93a5;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background: linear-gradient(180deg, var(--sky-top), var(--lavender));
     min-height: 100vh; color: var(--navy);
-    display: flex; flex-direction: column; align-items: center;
-    padding: 48px 20px;
+    display: flex; flex-direction: column; align-items: center; padding: 48px 20px;
   }
-  .card {
-    background: #fff; border-radius: 22px; box-shadow: 0 6px 24px rgba(20,30,50,.12);
-    max-width: 640px; width: 100%; padding: 36px 32px; margin-bottom: 24px;
-  }
+  .card { background: #fff; border-radius: 22px; box-shadow: 0 6px 24px rgba(20,30,50,.12);
+          max-width: 680px; width: 100%; padding: 36px 32px; margin-bottom: 24px; }
   h1 { font-size: 2rem; text-align: center; }
-  h1 .i { color: var(--blue); } h1 .k { color: var(--green); } h1 .a { color: var(--lavender); }
-  .tagline { text-align: center; letter-spacing: .22em; font-size: .78rem; color: #6b7688; margin: 10px 0 4px; }
-  h2 { font-size: 1.1rem; margin: 22px 0 8px; }
-  p, li { line-height: 1.55; color: #3d4657; }
+  h1 .i { color: var(--blue); } h1 .k { color: var(--mint); }
+  .tagline { text-align: center; letter-spacing: .18em; font-size: .76rem; color: var(--muted); margin: 10px 0 4px; }
+  .lead { text-align: center; color: var(--ink); margin-top: 14px; line-height: 1.55; }
+  h2 { font-size: 1.08rem; margin: 24px 0 8px; }
+  h3 { font-size: .95rem; margin: 16px 0 4px; color: var(--navy); }
+  p, li { line-height: 1.55; color: var(--ink); }
   ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
   a { color: var(--blue); text-decoration: none; }
   a:hover { text-decoration: underline; }
   .center { text-align: center; }
-  .muted { color: #8a93a5; font-size: .85rem; }
-  .lang-note { text-align: center; margin-bottom: 18px; font-size: .9rem; }
+  .muted { color: var(--muted); font-size: .85rem; }
+  .lang-note { text-align: center; margin: 16px 0 4px; font-size: .9rem; }
+  .note { background: #f4f6fb; border-left: 3px solid var(--mint);
+          padding: 12px 14px; border-radius: 8px; margin: 14px 0; font-size: .92rem; }
   hr { border: none; border-top: 1px solid #e6e9f0; margin: 26px 0; }
   footer { margin-top: 8px; text-align: center; font-size: .8rem; color: #5d6679; }
 </style>
@@ -43,63 +42,95 @@
 <body>
 
 <div class="card">
-  <h1>Colorime<span class="i">3</span><span class="k">k</span><span class="a">a</span></h1>
-  <p class="tagline">FORENZNÉ URČOVANIE FARIEB · FORENSIC COLOR ASSESSMENT</p>
+  <h1>Colorime<span class="i">3</span><span class="k">ka</span></h1>
+  <p class="tagline">PROJEKT FORENSIKA.EU</p>
+  <p class="lead">Meranie farby kožných nálezov pre súdnolekársku a dermatologickú dokumentáciu.<br>
+     <span class="muted">Colour measurement of skin findings for forensic and dermatological documentation.</span></p>
   <p class="lang-note"><a href="#sk">Slovensky</a> · <a href="#en">English</a></p>
 
   <hr>
 
   <section id="sk">
     <h2>O aplikácii</h2>
-    <p>Colorime3ka určuje farbu z fotografie alebo zo živého záberu fotoaparátu (s kruhovou lupou a podporou makro objektívu) a priraďuje jej najbližší slovný názov. Voliteľne ponúka dve odborné referenčné metódy — forenznú (vitalita, orientačné datovanie, morfológia poranení) a dermatologickú (diferenciálna diagnostika, ABCDE, exantémy) — vždy ako informačný text s upozornením, že nejde o diagnózu.</p>
+    <p>Colorime3ka zmeria farbu kožného nálezu z fotografie alebo zo živého záberu, prevedie ju do CIELAB a pomenuje podľa najbližšej referenčnej farby (ΔE, CIEDE2000). Nad rámec farby rozpoznáva morfologický vzor podľa <strong>chromofóru</strong> — teda podľa toho, ktorá látka farbu spôsobuje: melanín, hemoglobín, zaschnutá krv či chýbajúci pigment. Súčasťou je dvojjazyčný atlas 67 nálezov s vlastnými schematickými kresbami.</p>
+    <p>Aplikácia neposkytuje diagnózu a nie je zdravotníckou pomôckou. Percentá vyjadrujú zhodu nameraných znakov s referenčnými kritériami, nie diagnostickú istotu; strop je 85 %. Rozhodnutie vždy patrí lekárovi.</p>
 
     <h2>Podpora a kontakt</h2>
     <ul>
-      <li>E-mail: <a href="mailto:jansikuta@me.com">jansikuta@me.com</a> — otázky, chyby, návrhy</li>
+      <li>E-mail: <a href="mailto:forensika.eu@icloud.com">forensika.eu@icloud.com</a> — otázky, chyby, návrhy</li>
       <li>Odpovedáme spravidla do niekoľkých pracovných dní.</li>
     </ul>
 
     <h2>Časté otázky</h2>
-    <ul>
-      <li><strong>Prečo sa nameraná farba líši od skutočnosti?</strong> Výsledok závisí od osvetlenia a vyváženia bielej. Merajte pri dennom alebo štandardnom osvetlení, ideálne s farebnou/sivou škálou v zábere.</li>
-      <li><strong>Čo je lupa v rohu obrazovky?</strong> Zväčšený náhľad presne toho miesta, ktoré sa práve meria — pomáha overiť, že mierite na správny bod.</li>
-      <li><strong>Čo robí režim makro?</strong> Na podporovaných iPhonoch prepne na ultraširokouhlý objektív so zaostrením nablízko, vhodný na snímanie detailu zblízka.</li>
-      <li><strong>Ukladá aplikácia fotografie alebo údaje?</strong> Nie. Všetko sa spracúva na zariadení, nič sa neukladá ani neodosiela. Viac v <a href="privacy.html">zásadách ochrany súkromia</a>.</li>
-      <li><strong>Nahrádza aplikácia lekárske vyšetrenie?</strong> Nie. Forenzné a dermatologické hodnotenie je len referenčný text — posúdenie nálezu a datovanie poranení patrí lekárovi.</li>
-    </ul>
+
+    <h3>Prečo sa nameraná farba líši od toho, čo vidím?</h3>
+    <p>Farba na fotografii je súčin farby kože a farby osvetlenia. Najväčšiu chybu nespôsobuje chýbajúca kalibračná karta, ale automatika telefónu: vyvažovanie bielej sa aktívne snaží farebný nádych odstrániť — teda presne to sfarbenie, ktoré chcete zmerať. Zamknite expozíciu a vyváženie bielej dlhým podržaním prsta na <em>zdravej koži</em> vedľa nálezu a snímajte kolmo pri rovnomernom svetle.</p>
+
+    <h3>Ako funguje kalibrácia?</h3>
+    <p>Sivá karta vyrovná farebný nádych osvetlenia. Farebný terč (24 políčok) navyše opraví skreslenie, ktorým fotoaparát vykresľuje samotné farby — pri podliatine na tom záleží, lebo jediný obhájiteľný časový údaj je posun do žlta a to je práve os s najväčšou chybou. Kalibrácia platí vždy len pre jednu fotografiu.</p>
+
+    <h3>Prečo sa aplikácia pýta na úraz, trvanie a diaskopiu?</h3>
+    <p>Fotografia nenesie znaky, ktoré rozhodujú najčastejšie: či je koža porušená, či nález pri tlaku bledne, či je zachovaná kresba kože. Každý z nich vylúči celé skupiny nálezov spoľahlivejšie než ktorékoľvek meranie farby. Vecne nemožné kombinácie sa vylúčia úplne a dôvod sa vypíše.</p>
+
+    <h3>Dokáže určiť vek podliatiny?</h3>
+    <p>Nie — a hovorí to otvorene. Farebné tabuľky priraďujúce počet dní sa v novších prácach nepotvrdili. Jediný údaj s oporou v literatúre je žltá zložka: na výrone mladšom ako približne 18 hodín sa nepozoruje.</p>
+
+    <h3>Čo je expertný režim?</h3>
+    <p>Voliteľná funkcia (predvolene vypnutá) pre špecialistov s overenými závermi. Uloží meranie ako referenčný odtlačok — <strong>dvanásť nameraných čísel a vašu poznámku, nikdy fotografiu</strong>. Odtlačok sa ihneď zapojí do rozpoznávania a dá sa exportovať do súboru <code>.ch3lab</code> a preniesť na iné zariadenie.</p>
+
+    <h3>Ukladá aplikácia fotografie?</h3>
+    <p>Nikdy. Podrobnosti v <a href="privacy.html">zásadách ochrany súkromia</a>.</p>
+
+    <h3>Nahrádza lekárske vyšetrenie?</h3>
+    <p>Nie. Slúži na opis a dokumentáciu nálezu; posúdenie patrí lekárovi.</p>
   </section>
 
   <hr>
 
   <section id="en">
     <h2>About</h2>
-    <p>Colorime3ka identifies color from a photo or the live camera feed (with a circular loupe and macro lens support) and assigns it the nearest verbal name. It optionally offers two professional reference methods — forensic (vitality, approximate dating, wound morphology) and dermatological (differential diagnosis, ABCDE, exanthems) — always as informational text with a disclaimer that it is not a diagnosis.</p>
+    <p>Colorime3ka measures the colour of a skin finding from a photograph or the live camera, converts it to CIELAB and names it by the nearest reference colour (ΔE, CIEDE2000). Beyond colour it recognises the morphological pattern by <strong>chromophore</strong> — which substance causes the colour: melanin, haemoglobin, dried blood or missing pigment. It includes a bilingual atlas of 67 findings with original schematic drawings.</p>
+    <p>The app gives no diagnosis and is not a medical device. Percentages express the agreement of measured features with reference criteria, not diagnostic certainty; the ceiling is 85 %. The decision always belongs to the physician.</p>
 
     <h2>Support &amp; contact</h2>
     <ul>
-      <li>E-mail: <a href="mailto:jansikuta@me.com">jansikuta@me.com</a> — questions, bugs, suggestions</li>
+      <li>E-mail: <a href="mailto:forensika.eu@icloud.com">forensika.eu@icloud.com</a> — questions, bugs, suggestions</li>
       <li>We usually reply within a few business days.</li>
     </ul>
 
     <h2>FAQ</h2>
-    <ul>
-      <li><strong>Why does the measured color differ from reality?</strong> Results depend on lighting and white balance. Measure in daylight or standardized lighting, ideally with a color/gray chart in the frame.</li>
-      <li><strong>What is the loupe in the corner of the screen?</strong> A magnified preview of exactly the spot currently being measured — it helps confirm you're aiming at the right point.</li>
-      <li><strong>What does macro mode do?</strong> On compatible iPhones it switches to the ultra-wide lens with close focus, suited for close-up detail shots.</li>
-      <li><strong>Does the app store photos or data?</strong> No. Everything is processed on the device; nothing is stored or transmitted. See the <a href="privacy.html">privacy policy</a>.</li>
-      <li><strong>Does the app replace a medical examination?</strong> No. The forensic and dermatological assessments are reference text only — evaluation of findings and dating of injuries belongs to a physician.</li>
-    </ul>
+
+    <h3>Why does the measured colour differ from what I see?</h3>
+    <p>Colour in a photograph is the product of skin colour and the colour of the light. The largest error is not a missing calibration card but the phone's automatics: white balance actively tries to remove the colour cast — precisely the discolouration you want to measure. Lock exposure and white balance by long-pressing on <em>healthy skin</em> beside the finding, and shoot perpendicular in even light.</p>
+
+    <h3>How does calibration work?</h3>
+    <p>A grey card removes the colour cast of the lighting. A 24-patch colour chart additionally corrects how the camera renders colours — which matters for bruises, because the only defensible time indication is the shift towards yellow, and that is the axis with the largest error. Calibration always applies to a single photograph.</p>
+
+    <h3>Why does the app ask about trauma, duration and diascopy?</h3>
+    <p>A photograph does not carry the features that most often decide: whether the skin is broken, whether the lesion blanches under pressure, whether skin markings are preserved. Each of these excludes whole groups of findings more reliably than any colour measurement. Factually impossible combinations are excluded outright and the reason is stated.</p>
+
+    <h3>Can it determine the age of a bruise?</h3>
+    <p>No — and it says so openly. Colour tables assigning a number of days have not been confirmed in more recent work. The only indication supported by the literature is the yellow component: it is not observed in a bruise younger than roughly 18 hours.</p>
+
+    <h3>What is expert mode?</h3>
+    <p>An optional feature (off by default) for specialists with verified conclusions. It stores a measurement as a reference fingerprint — <strong>twelve measured numbers and your note, never a photograph</strong>. The fingerprint joins recognition immediately and can be exported as a <code>.ch3lab</code> file and carried to another device.</p>
+
+    <h3>Does the app store photos?</h3>
+    <p>Never. Details in the <a href="privacy.html">privacy policy</a>.</p>
+
+    <h3>Does it replace a medical examination?</h3>
+    <p>No. It supports description and documentation; the assessment belongs to a physician.</p>
   </section>
 </div>
 
 <div class="card center">
-  <p><strong>Forensika</strong> — partnerská platforma / partner platform</p>
+  <p><strong>Forensika</strong> — forenzné vzdelávanie a spolupráca / forensic education and collaboration</p>
   <p><a href="https://forensika.eu">forensika.eu ›</a></p>
   <p class="muted">Objasňujeme · Spájame · Posúvame</p>
 </div>
 
 <footer>
-  <p class="muted">© 2026 Ján Šikuta · Colorime3ka · <a href="privacy.html">Privacy Policy</a></p>
+  <p class="muted">© 2026 forensika.eu · Colorime3ka · autor Ján Šikuta · <a href="privacy.html">Privacy Policy</a></p>
 </footer>
 
 </body>

@@ -1,14 +1,44 @@
-# Colorime3ka — support page (GitHub Pages)
+# Colorime3ka — podporná stránka (forensika.eu)
 
-Podporná stránka aplikácie **Colorime3ka** — SK/EN, vrátane privacy policy. Toto je aktualizovaná verzia (odráža lupu, makro a dve metódy hodnotenia).
+Podporná stránka a zásady ochrany súkromia aplikácie **Colorime3ka**, SK/EN.
+Aktuálne pre verziu **2.8** (atlas 67 nálezov, kalibrácia terčom, merítko v mm,
+klinický kontext, referenčné odtlačky, expertný režim, import/export `.ch3lab`).
 
-## Nasadenie na GitHub Pages (github.com/dzanino)
+Súbory: `index.html` (podpora + FAQ) a `privacy.html`. Sú samostatné, bez
+externých závislostí — štýl je priamo v súbore, nič sa nesťahuje z internetu.
 
-1. Vytvorte (alebo znova použite) verejné repo **dzanino/colorime3ka**.
-2. Nahrajte `index.html`, `privacy.html` a tento `README.md` do koreňa repa (vetva `main`) — ak repo z minula existuje, tieto dva súbory jednoducho prepíšte.
-3. Repo → **Settings → Pages** → Source: *Deploy from a branch* → Branch `main`, folder `/ (root)` → Save.
-4. O pár minút bude stránka dostupná na:
-   - https://dzanino.github.io/colorime3ka/
-   - https://dzanino.github.io/colorime3ka/privacy.html
+## Nasadenie pod forensika.eu
 
-Tieto dve URL sa vkladajú do App Store Connect ako **Support URL** a **Privacy Policy URL** — pozri `../checklist.md`.
+Cieľové URL, ktoré patria do App Store Connect:
+
+- Support URL: `https://forensika.eu/colorime3ka/`
+- Privacy Policy URL: `https://forensika.eu/colorime3ka/privacy.html`
+
+### A) Web forensika.eu (odporúčané)
+
+Nahrajte oba súbory do adresára `colorime3ka/` v koreni webu. Nič viac —
+stránky sú statické.
+
+### B) GitHub Pages s vlastnou doménou
+
+Ak web beží na GitHub Pages:
+
+1. Súbory do repa (vetva `main`), do priečinka `colorime3ka/`.
+2. Settings → Pages → Custom domain: `forensika.eu` → Save (vytvorí sa `CNAME`).
+3. U registrátora domény nastaviť DNS podľa pokynov GitHubu (`A` záznamy
+   na GitHub Pages, prípadne `CNAME` pre `www`).
+4. Zapnúť **Enforce HTTPS**.
+
+## Po nasadení skontrolovať
+
+- [ ] Obe URL sa načítajú cez **https** a bez upozornenia na certifikát.
+- [ ] Odkaz `privacy.html` z podpornej stránky funguje a naopak.
+- [ ] E-mail je všade `forensika.eu@icloud.com`.
+- [ ] Apple vyžaduje, aby Privacy Policy URL bola **verejne dostupná bez prihlásenia**.
+
+## Prečo sa privacy prepisovala (2026-09)
+
+Pôvodný text tvrdil, že „po zavretí aplikácie sa nič neuchováva". Od expertného
+režimu to **neplatí**: naučené odtlačky zostávajú v zariadení. Nová verzia to
+hovorí presne — dvanásť čísel a poznámka, nikdy fotografia — a popisuje aj
+prenos `.ch3lab`. Privacy policy musí zodpovedať tomu, čo appka naozaj robí.
