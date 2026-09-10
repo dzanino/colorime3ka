@@ -37,6 +37,15 @@
           padding: 12px 14px; border-radius: 8px; margin: 14px 0; font-size: .92rem; }
   hr { border: none; border-top: 1px solid #e6e9f0; margin: 26px 0; }
   footer { margin-top: 8px; text-align: center; font-size: .8rem; color: #5d6679; }
+  .docs { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0 4px; }
+  .doc-link { flex: 1 1 240px; display: flex; align-items: center; gap: 12px;
+              background: #f4f6fb; border: 1px solid #e3e8f2; border-radius: 12px;
+              padding: 14px 16px; text-decoration: none; }
+  .doc-link:hover { background: #eef2fa; text-decoration: none; }
+  .doc-link .pdf { flex: 0 0 auto; font-size: .66rem; font-weight: 700; letter-spacing: .06em;
+                   color: #fff; background: var(--navy); border-radius: 5px; padding: 5px 7px; }
+  .doc-link .t { display: block; color: var(--navy); font-weight: 600; font-size: .95rem; }
+  .doc-link .m { display: block; color: var(--muted); font-size: .78rem; margin-top: 2px; }
 </style>
 </head>
 <body>
@@ -50,10 +59,31 @@
 
   <hr>
 
+  <h2 class="center">Dokumentácia / Documentation</h2>
+  <p class="center muted" style="margin-top:6px">Odborná príručka k aplikácii — metodika, meranie, kalibrácia, hranice metódy.<br>
+     Professional manual — method, measurement, calibration, limits.</p>
+  <div class="docs">
+    <a class="doc-link" href="Colorime3ka-prirucka-SK.pdf">
+      <span class="pdf">PDF</span>
+      <span><span class="t">Príručka — slovensky</span>
+            <span class="m">12 strán · verzia 2.8</span></span>
+    </a>
+    <a class="doc-link" href="Colorime3ka-Manual-EN.pdf">
+      <span class="pdf">PDF</span>
+      <span><span class="t">Manual — English</span>
+            <span class="m">12 pages · version 2.8</span></span>
+    </a>
+  </div>
+
+  <hr>
+
   <section id="sk">
     <h2>O aplikácii</h2>
     <p>Colorime3ka zmeria farbu kožného nálezu z fotografie alebo zo živého záberu, prevedie ju do CIELAB a pomenuje podľa najbližšej referenčnej farby (ΔE, CIEDE2000). Nad rámec farby rozpoznáva morfologický vzor podľa <strong>chromofóru</strong> — teda podľa toho, ktorá látka farbu spôsobuje: melanín, hemoglobín, zaschnutá krv či chýbajúci pigment. Súčasťou je dvojjazyčný atlas 67 nálezov s vlastnými schematickými kresbami.</p>
     <p>Aplikácia neposkytuje diagnózu a nie je zdravotníckou pomôckou. Percentá vyjadrujú zhodu nameraných znakov s referenčnými kritériami, nie diagnostickú istotu; strop je 85 %. Rozhodnutie vždy patrí lekárovi.</p>
+
+    <h2>Príručka</h2>
+    <p>Podrobná odborná príručka je na stiahnutie ako <a href="Colorime3ka-prirucka-SK.pdf">PDF (slovensky)</a> — metodika chromofóru, namerané referenčné hodnoty, postup fotografovania, kalibrácia, zdieľanie odtlačkov a hranice metódy.</p>
 
     <h2>Podpora a kontakt</h2>
     <ul>
@@ -91,6 +121,9 @@
     <h2>About</h2>
     <p>Colorime3ka measures the colour of a skin finding from a photograph or the live camera, converts it to CIELAB and names it by the nearest reference colour (ΔE, CIEDE2000). Beyond colour it recognises the morphological pattern by <strong>chromophore</strong> — which substance causes the colour: melanin, haemoglobin, dried blood or missing pigment. It includes a bilingual atlas of 67 findings with original schematic drawings.</p>
     <p>The app gives no diagnosis and is not a medical device. Percentages express the agreement of measured features with reference criteria, not diagnostic certainty; the ceiling is 85 %. The decision always belongs to the physician.</p>
+
+    <h2>Manual</h2>
+    <p>A detailed professional manual is available as a <a href="Colorime3ka-Manual-EN.pdf">PDF (English)</a> — the chromophore method, measured reference values, how to photograph, calibration, fingerprint sharing and the limits of the method.</p>
 
     <h2>Support &amp; contact</h2>
     <ul>
