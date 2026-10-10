@@ -15,7 +15,7 @@ externých závislostí — štýl je priamo v súbore, nič sa nesťahuje z int
 - Privacy Policy URL: `https://dzanino.github.io/colorime3ka/privacy.html`
 
 Obsah stránok je značkovo Forensika (hlavička „PROJEKT FORENSIKA.EU", kontakt
-`forensika.eu@icloud.com`) — hostiteľ je len technická vec. Presun pod vlastnú
+`admin@forensika.eu`) — hostiteľ je len technická vec. Presun pod vlastnú
 doménu je preto voliteľný; ak naň príde, cieľom je
 `https://forensika.eu/colorime3ka/` a stačí zmeniť URL v ASC.
 
@@ -38,7 +38,7 @@ Ak web beží na GitHub Pages:
 
 - [ ] Obe URL sa načítajú cez **https** a bez upozornenia na certifikát.
 - [ ] Odkaz `privacy.html` z podpornej stránky funguje a naopak.
-- [ ] E-mail je všade `forensika.eu@icloud.com`.
+- [ ] E-mail je všade `admin@forensika.eu`.
 - [ ] Apple vyžaduje, aby Privacy Policy URL bola **verejne dostupná bez prihlásenia**.
 
 ## Prečo sa privacy prepisovala (2026-09)
