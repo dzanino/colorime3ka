@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Colorime3ka: podpora / support · forensika.eu</title>
-<meta name="description" content="Colorime3ka: meranie farby kožných nálezov pre súdnolekársku a dermatologickú dokumentáciu. Podpora a kontakt. / Colour measurement of skin findings for forensic and dermatological documentation.">
+<meta name="description" content="Colorime3ka: meranie farby kožných nálezov pre súdnolekársku a dermatologickú dokumentáciu. Podpora a kontakt. / Colour measurement of skin findings for forensic and dermatological documentation. / Forensische Farbmessung von Hautbefunden, auch auf Deutsch.">
 <style>
   :root {
     --navy: #21334c; --sky-top: #b3c9ea; --lavender: #c9c2e3;
@@ -55,8 +55,9 @@
   <h1>Colorime<span class="i">3</span><span class="k">ka</span></h1>
   <p class="tagline">PROJEKT FORENSIKA.EU</p>
   <p class="lead">Meranie farby kožných nálezov pre súdnolekársku a dermatologickú dokumentáciu.<br>
-     <span class="muted">Colour measurement of skin findings for forensic and dermatological documentation.</span></p>
-  <p class="lang-note"><a href="#sk">Slovensky</a> · <a href="#en">English</a></p>
+     <span class="muted">Colour measurement of skin findings for forensic and dermatological documentation.<br>
+     Forensische Farbmessung von Hautbefunden für die rechtsmedizinische und dermatologische Dokumentation.</span></p>
+  <p class="lang-note"><a href="#sk">Slovensky</a> · <a href="#en">English</a> · <a href="#de">Deutsch</a></p>
 
   <hr>
 
@@ -163,6 +164,47 @@
     <h3>Does it replace a medical examination?</h3>
     <p>No. It supports description and documentation; the assessment belongs to a physician.</p>
   </section>
+
+  <hr>
+
+  <section id="de">
+    <h2>Über die App</h2>
+    <p>Colorime3ka misst die Farbe eines Hautbefunds im Foto oder im Live-Kamerabild, rechnet sie in CIELAB um und benennt sie nach der nächstliegenden Referenzfarbe (ΔE, CIEDE2000). Über die Farbe hinaus erkennt die App das morphologische Muster nach dem <strong>Farbstoff</strong>, also danach, welcher Stoff die Farbe verursacht: Melanin, Hämoglobin, eingetrocknetes Blut oder fehlendes Pigment. Dazu gehört ein Atlas mit 68 Befunden auf Deutsch, Englisch und Slowakisch mit eigenen schematischen Zeichnungen.</p>
+    <p>Ab Version 3.0 findet die App eine gedruckte Kalibriertafel T2/T3 von selbst, leitet auf dem iPhone Pro aus LiDAR einen Millimetermaßstab ab und berücksichtigt im klinischen Kontext die Körperregion; ab Version 3.1 beurteilt sie die <strong>Heilung einer postoperativen Wunde</strong> nach dem Southampton-Score und der Definition der Wundinfektion von CDC/NHSN: eine orientierende Einstufung für die Dokumentation, keine Diagnose einer Infektion. Ab Version 3.2 prüft sie, ob die Umgebung der Messfläche Haut sein kann (eine Plausibilitätsprüfung, keine Hauterkennung), zeigt die Stabilität der Messung und den ITA° der umgebenden Haut und fragt nach einer Beschichtung (Jod, Salbe, Farbstoff). Ab Version 3.2.1 bleibt ein mit der Lupe durch Ziehen gesetzter Punkt genau dort, wo Sie den Finger abheben, und Maßstabspunkte werden mit einem vergrößerten Fadenkreuz gesetzt und lassen sich verschieben. Ab Version 3.3 gibt es die App auch <strong>auf Deutsch</strong>, und die zehn am häufigsten verwechselten Atlaskarten haben eine neue Zeichnung mit Oberflächen- und Querschnittsfeldern und einer nummerierten Legende.</p>
+    <p>Die App stellt keine Diagnose und ist kein Medizinprodukt. Die Prozentwerte drücken die Übereinstimmung der gemessenen Merkmale mit Referenzkriterien aus, keine diagnostische Sicherheit; die Obergrenze liegt bei 85 %. Die Entscheidung liegt immer bei der Ärztin oder dem Arzt.</p>
+
+    <h2>Handbuch</h2>
+    <p>Das ausführliche Fachhandbuch gibt es als <a href="Colorime3ka-Handbuch-DE.pdf">PDF (Deutsch)</a>: Methode des Farbstoffs, gemessene Referenzwerte, Vorgehen beim Fotografieren, Kalibrierung, Weitergabe von Referenz-Messprofilen und Grenzen der Methode.</p>
+
+    <h2>Support und Kontakt</h2>
+    <ul>
+      <li>E-Mail: <a href="mailto:admin@forensika.eu">admin@forensika.eu</a> (Fragen, Fehler, Vorschläge)</li>
+      <li>Wir antworten in der Regel innerhalb weniger Werktage.</li>
+    </ul>
+
+    <h2>Häufige Fragen</h2>
+
+    <h3>Warum weicht die gemessene Farbe von dem ab, was ich sehe?</h3>
+    <p>Die Farbe im Foto ist das Produkt aus Hautfarbe und Farbe des Lichts. Den größten Fehler verursacht nicht eine fehlende Kalibrierkarte, sondern die Automatik des Telefons: Der Weißabgleich versucht aktiv, den Farbstich zu entfernen, und das ist genau die Verfärbung, die Sie messen wollen. Sperren Sie Belichtung und Weißabgleich mit einem langen Druck auf <em>gesunde Haut</em> neben dem Befund und fotografieren Sie senkrecht bei gleichmäßigem Licht.</p>
+
+    <h3>Wie funktioniert die Kalibrierung?</h3>
+    <p>Eine Graukarte gleicht den Farbstich der Beleuchtung aus. Eine Farbtafel mit 24 Feldern korrigiert zusätzlich, wie die Kamera Farben wiedergibt; bei Hämatomen ist das wichtig, weil die einzige vertretbare Zeitangabe die Verschiebung nach Gelb ist und gerade diese Achse den größten Fehler hat. Die Kalibrierung gilt immer nur für ein einzelnes Foto.</p>
+
+    <h3>Warum fragt die App nach Trauma, Dauer und Glasspatelprobe?</h3>
+    <p>Das Foto trägt nicht die Merkmale, die am häufigsten entscheiden: ob die Haut verletzt ist, ob der Befund unter Druck abblasst, ob die Hautfelderung erhalten ist. Jedes dieser Merkmale schließt ganze Gruppen von Befunden zuverlässiger aus als jede Farbmessung. Sachlich unmögliche Kombinationen werden ausgeschlossen und der Grund wird genannt.</p>
+
+    <h3>Kann sie das Alter eines Hämatoms bestimmen?</h3>
+    <p>Nein, und die App sagt das offen. Farbtabellen, die eine Anzahl von Tagen zuordnen, haben sich in neueren Arbeiten nicht bestätigt. Die einzige durch die Literatur gestützte Angabe ist die Gelbkomponente: Sie wird bei einem Hämatom, das jünger als etwa 18 Stunden ist, nicht beobachtet.</p>
+
+    <h3>Was ist der Expertenmodus?</h3>
+    <p>Eine optionale Funktion (standardmäßig aus) für Fachleute mit gesicherten Schlussfolgerungen. Sie speichert eine Messung als Referenz-Messprofil: <strong>zwölf gemessene Zahlen und Ihre Notiz, nie ein Foto</strong>. Das Messprofil fließt sofort in die Erkennung ein und lässt sich als <code>.ch3lab</code>-Datei exportieren und auf ein anderes Gerät mitnehmen.</p>
+
+    <h3>Speichert die App Fotos?</h3>
+    <p>Von sich aus nie, und sie überträgt nichts. Die einzige Ausnahme ist die Schaltfläche <em>Foto aufnehmen</em> in der Kamera (ab 3.0): Auf Ihren Befehl speichert sie ein einzelnes Bild in <strong>Ihrer eigenen Fotomediathek</strong> (Berechtigung nur zum Hinzufügen) und öffnet es im Reiter Foto. Details in der <a href="privacy.html#de">Datenschutzerklärung</a>.</p>
+
+    <h3>Ersetzt sie eine ärztliche Untersuchung?</h3>
+    <p>Nein. Sie unterstützt Beschreibung und Dokumentation; die Beurteilung obliegt der Ärztin oder dem Arzt.</p>
+  </section>
 </div>
 
 <div class="card center">
@@ -172,7 +214,7 @@
 </div>
 
 <footer>
-  <p class="muted"><span data-fz>©</span> 2026 forensika.eu · Colorime3ka · autor Ján Šikuta · <a href="privacy.html">Privacy Policy</a></p>
+  <p class="muted"><span data-fz>©</span> 2026 forensika.eu · Colorime3ka · autor Ján Šikuta · <a href="privacy.html">Privacy Policy</a> · <a href="privacy.html#de">Datenschutz</a></p>
 </footer>
 
 <script src="site.js" defer></script>
